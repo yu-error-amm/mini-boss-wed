@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05070A">
+    <meta name="description" content="MINI BOSS - Professional Mobile Service & Software Solutions. Android flashing, FRP removal, Fastboot, ADB, Firmware and remote repair worldwide.">
+    <meta name="keywords" content="mobile repair, FRP bypass, Android flashing, Fastboot, ADB, firmware, remote service, MINI BOSS">
+    <meta name="author" content="MINI BOSS">
+    <meta property="og:title" content="MINI BOSS | Professional Mobile Service">
+    <meta property="og:description" content="Professional Android software solutions, FRP service, Fastboot, ADB and remote repair worldwide.">
+    <meta property="og:type" content="website">
+    <title>MINI BOSS | Professional Mobile Service</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-microchip"></i> MINI <span>BOSS</span>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#home" class="active" data-i18n="nav-home">Home</a></li>
+                <li><a href="index.html#services" data-i18n="nav-services">Services</a></li>
+                <li><a href="index.html#remote-service" data-i18n="nav-remote">Remote Service</a></li>
+                <li><a href="index.html#about" data-i18n="nav-about">About</a></li>
+                <li><a href="index.html#contact" data-i18n="nav-contact">Contact</a></li>
+                <li><a href="paidGp.html"><i class="fa-solid fa-crown" style="color: #fbbf24; margin-right: 5px;"></i><span data-i18n="nav-vip-group">VIP Group</span></a></li>
+                <li>
+                    <a href="tool_download.html" class="nav-btn-download">
+                        <i class="fa-solid fa-download"></i> <span data-i18n="nav-tools-download">Tool Download</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="lang-switch" class="lang-switch" title="Change Language" aria-label="Switch language">
+                    <span id="lang-en" class="active">EN</span> | <span id="lang-mm">MM</span>
+                </button>
+                <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="container hero-content reveal">
+            <div class="status-badge">
+                <div class="status-dot"></div>
+                <span data-i18n="sys-online">SYSTEM ONLINE</span>
+            </div>
+            <h1 data-i18n="hero-title">Professional Mobile Service & Software Solutions</h1>
+            <p data-i18n="hero-subtitle">Android Software • FRP Service • Fastboot • ADB • Firmware</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">
+                    <i class="fa-solid fa-rocket"></i> <span data-i18n="hero-btn">Explore Services</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-headset"></i> <span data-i18n="hero-btn-contact">Get Support</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPPORTED BRANDS -->
+    <section id="brands" class="brand-services">
+        <div class="container brand-services-wrap reveal">
+            <div class="section-brand-title">
+                <span class="brand-mark"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                <h2 data-i18n="brand-title">Supported Brands & Worldwide Coverage</h2>
+            </div>
+
+            <div class="brand-showcase">
+                <div class="brand-globe-panel">
+                    <div class="globe-shell">
+                        <canvas id="globe-canvas" class="global-animation" width="520" height="520" aria-label="Animated global service coverage"></canvas>
+                        <div class="globe-caption">
+                            <span class="globe-stat">3M+</span>
+                            <span class="globe-stat-label" data-i18n="globe-stat">Devices Served Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-grid-panel">
+                    <div class="brand-panel-header">Supported_Devices.list</div>
+                    <div class="device-grid">
+                        <div class="device-card apple"><img src="LOGO/APPLE.png" alt="Apple" loading="lazy"><small>Apple</small></div>
+                        <div class="device-card hmd"><img src="LOGO/HMD.png" alt="HMD" loading="lazy"><small>HMD</small></div>
+                        <div class="device-card honor"><img src="LOGO/HONOR.png" alt="Honor" loading="lazy"><small>Honor</small></div>
+                        <div class="device-card huawei"><img src="LOGO/HUAWEI.png" alt="Huawei" loading="lazy"><small>Huawei</small></div>
+                        <div class="device-card infinix"><img src="LOGO/INFINIX.png" alt="Infinix" loading="lazy"><small>Infinix</small></div>
+                        <div class="device-card itel"><img src="LOGO/ITEL.png" alt="iTel" loading="lazy"><small>iTel</small></div>
+                        <div class="device-card lenovo"><img src="LOGO/LENOVO.png" alt="Lenovo" loading="lazy"><small>Lenovo</small></div>
+                        <div class="device-card lg"><img src="LOGO/LG.png" alt="LG" loading="lazy"><small>LG</small></div>
+                        <div class="device-card meizu"><img src="LOGO/MEIZU.png" alt="Meizu" loading="lazy"><small>Meizu</small></div>
+                        <div class="device-card motorola"><img src="LOGO/MOTOROLA.png" alt="Motorola" loading="lazy"><small>Motorola</small></div>
+                        <div class="device-card nokia"><img src="LOGO/NOKIA.png" alt="Nokia" loading="lazy"><small>Nokia</small></div>
+                        <div class="device-card oneplus"><img src="LOGO/ONEPLUS.png" alt="OnePlus" loading="lazy"><small>OnePlus</small></div>
+                        <div class="device-card oppo"><img src="LOGO/OPPO.png" alt="Oppo" loading="lazy"><small>Oppo</small></div>
+                        <div class="device-card pixel"><img src="LOGO/PIXEL.png" alt="Pixel" loading="lazy"><small>Pixel</small></div>
+                        <div class="device-card poco"><img src="LOGO/POCO.png" alt="Poco" loading="lazy"><small>Poco</small></div>
+                        <div class="device-card realme"><img src="LOGO/REALME.png" alt="Realme" loading="lazy"><small>Realme</small></div>
+                        <div class="device-card redmagic"><img src="LOGO/READMAGIC.png" alt="RedMagic" loading="lazy"><small>RedMagic</small></div>
+                        <div class="device-card samsung"><img src="LOGO/SAMSUNG.png" alt="Samsung" loading="lazy"><small>Samsung</small></div>
+                        <div class="device-card sony"><img src="LOGO/SONY.png" alt="Sony" loading="lazy"><small>Sony</small></div>
+                        <div class="device-card tcl"><img src="LOGO/TCL.png" alt="TCL" loading="lazy"><small>TCL</small></div>
+                        <div class="device-card tecno"><img src="LOGO/TECNO.png" alt="Tecno" loading="lazy"><small>Tecno</small></div>
+                        <div class="device-card vivo"><img src="LOGO/VIVO.png" alt="Vivo" loading="lazy"><small>Vivo</small></div>
+                        <div class="device-card xiaomi"><img src="LOGO/XIAOMI.png" alt="Xiaomi" loading="lazy"><small>Xiaomi</small></div>
+                        <div class="device-card zte"><img src="LOGO/ZTE.png" alt="ZTE" loading="lazy"><small>ZTE</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="sec-services-title">Professional Services</h2>
+                <p data-i18n="sec-services-desc">Comprehensive software and hardware solutions for mobile technicians and service centers.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-brands fa-android"></i></div>
+                    <h3 data-i18n="srv-1-title">Android Software Service</h3>
+                    <p data-i18n="srv-1-desc">Complete OS flashing, unbricking, and advanced system recovery solutions for all Android devices.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 data-i18n="srv-2-title">FRP Service</h3>
+                    <p data-i18n="srv-2-desc">Factory Reset Protection removal for modern security patches across multiple brands.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
+                    <h3 data-i18n="srv-3-title">ADB / Fastboot</h3>
+                    <p data-i18n="srv-3-desc">Advanced command-line operations, bootloader unlocking, and direct device manipulation.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-sd-card"></i></div>
+                    <h3 data-i18n="srv-4-title">Firmware Flashing</h3>
+                    <p data-i18n="srv-4-desc">Official stock ROM flashing, region changes, and downgrade services with secure protocols.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 data-i18n="srv-7-title">Dead Boot Repair</h3>
+                    <p data-i18n="srv-7-desc">Revive completely dead devices using advanced JTAG and test point methodologies.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-signal"></i></div>
+                    <h3 data-i18n="srv-8-title">Network / IMEI Service</h3>
+                    <p data-i18n="srv-8-desc">Baseband repair, NVRAM restoration, and network unlock solutions.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+                    <h3 data-i18n="srv-9-title">Tool & Credit Resell</h3>
+                    <p data-i18n="srv-9-desc">Official reseller for server credits and tool activations including Ghost Auth, Xiaomi BD Auth, and Hello Unlocker.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fa-solid fa-building-lock"></i></div>
+                    <h3 data-i18n="srv-10-title">MDM & Knox Bypass</h3>
+                    <p data-i18n="srv-10-desc">Secure bypassing of Mobile Device Management and enterprise locks for corporate devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REMOTE SERVICE -->
+    <section id="remote-service">
+        <div class="container remote-layout">
+            <div class="remote-content reveal">
+                <h2 data-i18n="rem-title">Premium Remote Service</h2>
+                <p class="lead" data-i18n="rem-lead">Get your mobile issues fixed remotely from anywhere in the world. Secure, fast, and handled by professionals.</p>
+
+                <h4 data-i18n="rem-req-title" style="margin-bottom: 15px; color: #fff;">Requirements:</h4>
+                <ul class="req-list">
+                    <li><i class="fa-brands fa-windows"></i> <span data-i18n="rem-req-1">Windows PC (Windows 10/11)</span></li>
+                    <li><i class="fa-solid fa-wifi"></i> <span data-i18n="rem-req-2">Stable & Fast Internet Connection</span></li>
+                    <li><i class="fa-solid fa-desktop"></i> <span data-i18n="rem-req-3">TeamViewer, UltraViewer, or USB Redirector</span></li>
+                    <li><i class="fa-brands fa-usb"></i> <span data-i18n="rem-req-4">Good quality USB Cable</span></li>
+                </ul>
+            </div>
+
+            <div class="remote-capabilities reveal">
+                <h4 data-i18n="rem-cap-title" style="margin-bottom: 20px; font-size: 1.2rem; text-align: center;">Our Remote Capabilities</h4>
+                <div class="capabilities-grid">
+                    <div class="cap-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span data-i18n="rem-cap-1">Mi Account Bypass</span>
+                    </div>
+                    <div class="cap-item">
+                        <i class="fa-solid fa-id-badge"></i>
+                        <span data-i18n="rem-cap-2">Oppo / Vivo / Huawei ID</span>
+                    </div>
+                    <div class="cap-item">
+                        <i class="fa-solid fa-server"></i>
+                        <span data-i18n="rem-cap-3">Server Auth Flashing</span>
+                    </div>
+                    <div class="cap-item">
+                        <i class="fa-solid fa-lock-open"></i>
+                        <span data-i18n="rem-cap-4">FRP & Network Unlock</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats">
+        <div class="container">
+            <div class="stats-grid reveal">
+                <div class="stat-item">
+                    <h3>4+</h3>
+                    <p data-i18n="stat-years">Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p data-i18n="stat-devices">Devices Recovered</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99%</h3>
+                    <p data-i18n="stat-success">Success Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p data-i18n="stat-support">Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container about-layout">
+            <div class="about-content reveal">
+                <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+                    <h2 data-i18n="about-title">Why Customers Choose MINI BOSS</h2>
+                </div>
+                <p data-i18n="about-text">We combine trusted mobile repair expertise with modern software tools, transparent workflows, and secure handling of customer devices. From FRP and flashing to advanced remote support, our team is focused on fast, reliable results.</p>
+
+                <div class="code-block" style="margin-top: 20px;">
+                    <span>&lt;mini_boss /&gt;</span><br>
+                    skillset = ["Android flashing", "FRP", "Fastboot", "ADB", "Remote fix"]<br>
+                    trust_level = "High"<br>
+                    response_time = "Fast"
+                </div>
+            </div>
+
+            <div class="about-visual-card reveal">
+                <div class="code-block">
+                    <span># 01</span> Device Intake<br>
+                    <span># 02</span> Diagnosis & Secure Backup<br>
+                    <span># 03</span> Repair / Unlock / Flash<br>
+                    <span># 04</span> Verification & Delivery
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section id="workflow">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="workflow-title">Simple Repair Workflow</h2>
+                <p data-i18n="workflow-desc">A clear process that keeps each job fast, secure, and stress-free for our customers.</p>
+            </div>
+
+            <div class="workflow-timeline reveal">
+                <div class="workflow-step">
+                    <div class="step-number">01</div>
+                    <div>
+                        <h4 data-i18n="step-1-title">Request</h4>
+                        <p data-i18n="step-1-desc">Share device details and issue summary.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">02</div>
+                    <div>
+                        <h4 data-i18n="step-2-title">Diagnose</h4>
+                        <p data-i18n="step-2-desc">Assess the issue and confirm the best fix path.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">03</div>
+                    <div>
+                        <h4 data-i18n="step-3-title">Repair</h4>
+                        <p data-i18n="step-3-desc">Perform flashing, unlocks, or recovery work.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number">04</div>
+                    <div>
+                        <h4 data-i18n="step-4-title">Verify</h4>
+                        <p data-i18n="step-4-desc">Test functionality and hand over a clean result.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container contact-layout">
+            <div class="contact-info reveal">
+                <div class="section-header" style="text-align: left; margin-bottom: 0;">
+                    <h2 data-i18n="contact-title">Let’s Fix Your Device</h2>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4 data-i18n="contact-phone-label">Phone</h4>
+                        <p>+95 9 774505997, +95 9 770810374</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h4 data-i18n="contact-email-label">Email</h4>
+                        <p>aungmyintmya5000@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4 data-i18n="contact-location-label">Location</h4>
+                        <p data-i18n="contact-location">Remote support worldwide</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Describe your issue" aria-label="Describe your issue" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-i18n="contact-submit">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- EXPERT ADMINS -->
+    <section id="admins" class="admins-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="admins-title">Meet Our Expert Admins</h2>
+            </div>
+            <div class="admins-grid">
+                <article class="glass-card admin-card reveal">
+                    <img class="admin-avatar admin-avatar-aung" src="LOGO/aung.jpg" alt="Aung Myint Myat" loading="lazy">
+                    <h3 class="admin-name">Aung Myint Myat</h3>
+                    <p class="admin-role">Founder &amp; VIP Support Admin</p>
+                    <div class="admin-socials">
+                        <a class="admin-social-link facebook" href="https://www.facebook.com/share/1CGqQb7yy7/" target="_blank" rel="noopener noreferrer" aria-label="Aung Myint Myat on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a class="admin-social-link telegram" href="https://t.me/aungmyintmyat007010" target="_blank" rel="noopener noreferrer" aria-label="Contact Aung Myint Myat on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+                        <a class="admin-social-link tiktok" href="https://www.tiktok.com/@aung_myint_myat_007?_r=1&amp;_t=ZS-9ANBiFxHVeX" target="_blank" rel="noopener noreferrer" aria-label="Aung Myint Myat on TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+                <article class="glass-card admin-card reveal">
+                    <img class="admin-avatar" src="LOGO/myo.jpg" alt="Myo Min Thu" loading="lazy">
+                    <h3 class="admin-name">Myo Min Thu</h3>
+                    <p class="admin-role">Senior Admin &amp; Bypass Expert</p>
+                    <div class="admin-socials">
+                        <a class="admin-social-link facebook" href="https://www.facebook.com/share/1D4BJWRnai/" target="_blank" rel="noopener noreferrer" aria-label="Myo on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                        <a class="admin-social-link telegram" href="https://t.me/MUnlocker95" target="_blank" rel="noopener noreferrer" aria-label="Contact Myo on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a>
+                        <a class="admin-social-link tiktok" href="https://www.tiktok.com/@myominthu.ga?_r=1&amp;_t=ZS-9ANBpBIBcij" target="_blank" rel="noopener noreferrer" aria-label="Myo on TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex;">
+                        <i class="fa-solid fa-microchip"></i> MINI <span>BOSS</span>
+                    </a>
+                    <p data-i18n="footer-text" style="color: var(--text-muted); max-width: 420px;">Professional mobile repair and software solutions for Android devices, FRP recovery, firmware flashing, and remote support.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/aungmyintmyat007010" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://t.me/aungmyintmyat007010" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.tiktok.com/@aung_myint_myat_007?_r=1&amp;_t=ZS-9ANBiFxHVeX" aria-label="Aung Myint Myat on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.tiktok.com/@myominthu.ga?_r=1&amp;_t=ZS-9ANBpBIBcij" aria-label="Myo on TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 data-i18n="footer-links-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#remote-service">Remote Service</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 data-i18n="footer-support-title">Support</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="tool_download.html">Tool Download</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MINI BOSS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const translations = {
+                en: {
+                    "nav-home": "Home",
+                    "nav-services": "Services",
+                    "nav-remote": "Remote Service",
+                    "nav-about": "About",
+                    "nav-contact": "Contact",
+                    "nav-vip-group": "VIP Group",
+                    "nav-tools-download": "Tool Download",
+                    "admins-title": "Meet Our Expert Admins",
+                    "sys-online": "SYSTEM ONLINE",
+                    "hero-title": "Professional Mobile Service & Software Solutions",
+                    "hero-subtitle": "Android Software • FRP Service • Fastboot • ADB • Firmware",
+                    "hero-btn": "Explore Services",
+                    "hero-btn-contact": "Get Support",
+                    "brand-title": "Supported Brands & Worldwide Coverage",
+                    "globe-stat": "Devices Served Worldwide",
+                    "sec-services-title": "Professional Services",
+                    "sec-services-desc": "Comprehensive software and hardware solutions for mobile technicians and service centers.",
+                    "srv-1-title": "Android Software Service",
+                    "srv-1-desc": "Complete OS flashing, unbricking, and advanced system recovery solutions for all Android devices.",
+                    "srv-2-title": "FRP Service",
+                    "srv-2-desc": "Factory Reset Protection removal for modern security patches across multiple brands.",
+                    "srv-3-title": "ADB / Fastboot",
+                    "srv-3-desc": "Advanced command-line operations, bootloader unlocking, and direct device manipulation.",
+                    "srv-4-title": "Firmware Flashing",
+                    "srv-4-desc": "Official stock ROM flashing, region changes, and downgrade services with secure protocols.",
+                    "srv-7-title": "Dead Boot Repair",
+                    "srv-7-desc": "Revive completely dead devices using advanced JTAG and test point methodologies.",
+                    "srv-8-title": "Network / IMEI Service",
+                    "srv-8-desc": "Baseband repair, NVRAM restoration, and network unlock solutions.",
+                    "srv-9-title": "Tool & Credit Resell",
+                    "srv-9-desc": "Official reseller for server credits and tool activations including Ghost Auth, Xiaomi BD Auth, and Hello Unlocker.",
+                    "srv-10-title": "MDM & Knox Bypass",
+                    "srv-10-desc": "Secure bypassing of Mobile Device Management and enterprise locks for corporate devices.",
+                    "rem-title": "Premium Remote Service",
+                    "rem-lead": "Get your mobile issues fixed remotely from anywhere in the world. Secure, fast, and handled by professionals.",
+                    "rem-req-title": "Requirements:",
+                    "rem-req-1": "Windows PC (Windows 10/11)",
+                    "rem-req-2": "Stable & Fast Internet Connection",
+                    "rem-req-3": "TeamViewer, UltraViewer, or USB Redirector",
+                    "rem-req-4": "Good quality USB Cable",
+                    "rem-cap-title": "Our Remote Capabilities",
+                    "rem-cap-1": "Mi Account Bypass",
+                    "rem-cap-2": "Oppo / Vivo / Huawei ID",
+                    "rem-cap-3": "Server Auth Flashing",
+                    "rem-cap-4": "FRP & Network Unlock",
+                    "stat-years": "Years Experience",
+                    "stat-devices": "Devices Recovered",
+                    "stat-success": "Success Rate",
+                    "stat-support": "Support",
+                    "about-title": "Why Customers Choose MINI BOSS",
+                    "about-text": "We combine trusted mobile repair expertise with modern software tools, transparent workflows, and secure handling of customer devices. From FRP and flashing to advanced remote support, our team is focused on fast, reliable results.",
+                    "workflow-title": "Simple Repair Workflow",
+                    "workflow-desc": "A clear process that keeps each job fast, secure, and stress-free for our customers.",
+                    "step-1-title": "Request",
+                    "step-1-desc": "Share device details and issue summary.",
+                    "step-2-title": "Diagnose",
+                    "step-2-desc": "Assess the issue and confirm the best fix path.",
+                    "step-3-title": "Repair",
+                    "step-3-desc": "Perform flashing, unlocks, or recovery work.",
+                    "step-4-title": "Verify",
+                    "step-4-desc": "Test functionality and hand over a clean result.",
+                    "contact-title": "Let’s Fix Your Device",
+                    "contact-phone-label": "Phone",
+                    "contact-email-label": "Email",
+                    "contact-location-label": "Location",
+                    "contact-location": "Remote support worldwide",
+                    "contact-submit": "Send Inquiry",
+                    "footer-text": "Professional mobile repair and software solutions for Android devices, FRP recovery, firmware flashing, and remote support.",
+                    "footer-links-title": "Quick Links",
+                    "footer-support-title": "Support",
+                    "toast-success": "Message sent successfully!",
+                    "toast-error": "Please fill in all fields."
+                },
+                mm: {
+                    "nav-home": "ပင်မစာမျက်နှာ",
+                    "nav-services": "ဝန်ဆောင်မှုများ",
+                    "nav-remote": "Remote Services",
+                    "nav-about": "အကြောင်း",
+                    "nav-contact": "ဆက်သွယ်ရန်",
+                    "nav-vip-group": "VIP ဂရု",
+                    "nav-tools-download": "Tool ဒေါင်းလုဒ်",
+                    "admins-title": "ကျွန်ုပ်တို့၏ ကျွမ်းကျင် Admin များနှင့် မိတ်ဆက်ပါ",
+                    "sys-online": "စနစ်အွန်လိုင်းပေါ်တွင်ရှိသည်",
+                    "hero-title": "Professional Mobile Service & Software Solutions",
+                    "hero-subtitle": "Android ဆော့ဖ်ဝဲလ် • FRP ဖြုတ်ခြင်း • Fastboot • ADB • Firmware",
+                    "hero-btn": "ဝန်ဆောင်မှုများ လေ့လာရန်",
+                    "hero-btn-contact": "အကူအညီရယူရန်",
+                    "brand-title": "ပံ့ပိုးပေးသော Brand များ & ကမ္ဘာအနှံ့",
+                    "globe-stat": "ကမ္ဘာအနှံ့ ဝန်ဆောင်မှုပေးပြီး",
+                    "sec-services-title": "Professional Services",
+                    "sec-services-desc": "မိုဘိုင်းနည်းပညာရှင်များနှင့် ဝန်ဆောင်မှုစင်တာများအတွက် ပြီးပြည့်စုံသော ဆော့ဖ်ဝဲလ်နှင့် ဟာ့ဒ်ဝဲလ် ဖြေရှင်းချက်များ။",
+                    "srv-1-title": "Android ဆော့ဖ်ဝဲလ် ဝန်ဆောင်မှု",
+                    "srv-1-desc": "Android ဖုန်းများအတွက် OS ရေးခြင်း၊ Unbrick လုပ်ခြင်းနှင့် အဆင့်မြင့် စနစ်ပြန်လည်သတ်မှတ်ခြင်း။",
+                    "srv-2-title": "FRP ဖြုတ်ခြင်း",
+                    "srv-2-desc": "ခေတ်မီလုံခြုံရေး patch များပါဝင်သော ဖုန်းများအတွက် Google Account (FRP) ဖယ်ရှားပေးခြင်း။",
+                    "srv-3-title": "ADB / Fastboot ဝန်ဆောင်မှု",
+                    "srv-3-desc": "အဆင့်မြင့် Command-line လုပ်ဆောင်ချက်များ၊ Bootloader ဖွင့်ခြင်းနှင့် ဖုန်းကို တိုက်ရိုက် ထိန်းချုပ်ခြင်း။",
+                    "srv-4-title": "Firmware ရေးခြင်း",
+                    "srv-4-desc": "မူရင်း Stock ROM ရေးခြင်း၊ Region ချိန်းခြင်းနှင့် လုံခြုံသော ပရိုတိုကောများဖြင့် ဖန်းဝဲရေးခြင်း။",
+                    "srv-7-title": "Dead Boot ပြုပြင်ခြင်း",
+                    "srv-7-desc": "အဆင့်မြင့် JTAG နှင့် Test Point နည်းလမ်းများကို အသုံးပြု၍ လုံးဝပါဝါပိတ်သွားသော ဖုန်းများကို ပြန်လည်အသက်သွင်းခြင်း။",
+                    "srv-8-title": "Network / IMEI ဝန်ဆောင်မှု",
+                    "srv-8-desc": "Baseband ပြုပြင်ခြင်း၊ NVRAM ပြန်လည်ထည့်သွင်းခြင်းနှင့် Network ဖွင့်ခြင်း ဖြေရှင်းချက်များ။",
+                    "srv-9-title": "Tool နှင့် Credit အရောင်း",
+                    "srv-9-desc": "Ghost Auth, Xiaomi BD Auth, Hello Unlocker စသည့် Server credit များနှင့် Tool activation များကို ယုံကြည်စိတ်ချစွာ ဝယ်ယူရရှိနိုင်ပါသည်။",
+                    "srv-10-title": "MDM နှင့် Knox Bypass",
+                    "srv-10-desc": "ကုမ္ပဏီသုံး ဖုန်းများအတွက် Mobile Device Management နှင့် Knox လော့ခ်များကို လုံခြုံစွာ ကျော်ဖြတ်ပေးခြင်း။",
+                    "rem-title": "Remote Services",
+                    "rem-lead": "သင့်မိုဘိုင်းပြဿနာများကို နေရာမရွေး အဝေးမှ ပြုပြင်လိုက်ပါ။ လုံခြုံ၊ မြန်ဆန်ပြီး ကျွမ်းကျင်စွာ ဆောင်ရွက်ပေးပါသည်။",
+                    "rem-req-title": "လိုအပ်ချက်များ -",
+                    "rem-req-1": "Windows PC (Windows 10/11) ရှိရမည်",
+                    "rem-req-2": "မြန်ဆန်ပြီး တည်ငြိမ်သော အင်တာနက်",
+                    "rem-req-3": "TeamViewer, UltraViewer သို့မဟုတ် USB Redirector",
+                    "rem-req-4": "အရည်အသွေးကောင်းမွန်သော USB ကြိုး",
+                    "rem-cap-title": "Remote Services",
+                    "rem-cap-1": "Mi Account ဖြုတ်ခြင်း",
+                    "rem-cap-2": "Oppo / Vivo / Huawei ID ဖြုတ်ခြင်း",
+                    "rem-cap-3": "Server Auth ဖြင့် ဖန်းဝဲရေးခြင်း",
+                    "rem-cap-4": "FRP နှင့် Network ဖွင့်ခြင်း",
+                    "stat-years": "အတွေ့အကြုံနှစ်ပေါင်း",
+                    "stat-devices": "ပြုပြင်ပြီး ဖုန်းအရေအတွက်",
+                    "stat-success": "အောင်မြင်မှုနှုန်း",
+                    "stat-support": "ပံ့ပိုးကူညီမှု",
+                    "about-title": "MINI BOSS ကို အဘယ်ကြောင့်ရွေးချယ်သလဲ",
+                    "about-text": "ကျွန်ုပ်တို့သည် ယုံကြည်ရသော မိုဘိုင်းပြုပြင်ရေးအတွေ့အကြုံ၊ ခေတ်မီဆော့ဖ်ဝဲလ်ကိရိယာများ၊ စနစ်တကျလုပ်ဆောင်မှုနှင့် ဖုန်းများကို လုံခြုံစွာ ကိုင်တွယ်ပေးသော ဆောင်ရွက်မှုများကို ပေါင်းစပ်ထားပါသည်။ FRP၊ Firmware Flashing နှင့် Remote Support အထိ များစွာသော ဝန်ဆောင်မှုများကို မြန်ဆန်ပြီး စိတ်ချရစွာ ပေးဆောင်ပါသည်။",
+                    "workflow-title": "ရိုးရှင်းသော ပြုပြင်ရေးလုပ်ငန်းစဉ်",
+                    "workflow-desc": "အလုပ်တစ်ခုစီကို မြန်ဆန်စွာ၊ လုံခြုံစွာနှင့် စိတ်အလုံအငုံဖြင့် စီမံပေးသော လုပ်ငန်းစဉ်တစ်ခု။",
+                    "step-1-title": "တောင်းဆိုမှု",
+                    "step-1-desc": "ဖုန်းအခြေအနေနှင့် ပြဿနာအကျဉ်းကို မေးမြန်းပါ။",
+                    "step-2-title": "စစ်ဆေးခြင်း",
+                    "step-2-desc": "ပြဿနာကို စစ်ဆေးပြီး သင့်အတွက် အကောင်းဆုံး ဖြေရှင်းနည်းကို ဆုံးဖြတ်ပါ။",
+                    "step-3-title": "ပြုပြင်ရန်",
+                    "step-3-desc": "Flashing၊ Unlock၊ Recovery စသည့် လုပ်ငန်းများကို ဆောင်ရွက်ပါ။",
+                    "step-4-title": "စစ်ဆေးရန်",
+                    "step-4-desc": "လုပ်ဆောင်မှုကို စစ်ဆေးပြီး သန့်ရှင်းသော ရလဒ်ဖြင့် ပေးအပ်ပါ။",
+                    "contact-title": "သင့်ဖုန်းကို အမြန်ပြင်ပေးမယ်",
+                    "contact-phone-label": "ဖုန်း",
+                    "contact-email-label": "အီးမေးလ်",
+                    "contact-location-label": "တည်နေရာ",
+                    "contact-location": "ကမ္ဘာအနှံ့ Remote Support",
+                    "contact-submit": "မေးမြန်းမှုပို့မည်",
+                    "footer-text": "Android ဖုန်းများအတွက် FRP Recovery၊ Firmware Flashing နှင့် Remote Support တို့အတွက် ကျွမ်းကျင်သော မိုဘိုင်းပြုပြင်ရေးနှင့် ဆော့ဖ်ဝဲလ်ဖြေရှင်းချက်များ။",
+                    "footer-links-title": "အမြန်လင့်များ",
+                    "footer-support-title": "ပံ့ပိုးကူညီမှု",
+                    "toast-success": "စာတိုပို့ပြီးပါပြီ!",
+                    "toast-error": "အချက်အလက်အားလုံး ဖြည့်ပေးပါ။"
+                }
+            };
+
+            const navbar = document.getElementById('navbar');
+            const scrollProgress = document.getElementById('scroll-progress');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            const navMenu = document.getElementById('nav-links');
+            const hamburger = document.getElementById('hamburger');
+            const langSwitchBtn = document.getElementById('lang-switch');
+            const langEn = document.getElementById('lang-en');
+            const langMm = document.getElementById('lang-mm');
+            const revealElements = document.querySelectorAll('.reveal');
+            const sections = document.querySelectorAll('section[id]');
+            let currentLang = localStorage.getItem('miniboss_lang') || 'en';
+
+            function showToast(message, isError = false) {
+                const container = document.getElementById('toast-container');
+                const toast = document.createElement('div');
+                toast.className = 'toast' + (isError ? ' error' : '');
+                toast.innerHTML = `<i class="fa-solid ${isError ? 'fa-circle-exclamation' : 'fa-circle-check'}"></i> ${message}`;
+                container.appendChild(toast);
+                requestAnimationFrame(() => toast.classList.add('show'));
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    setTimeout(() => toast.remove(), 350);
+                }, 3200);
+            }
+
+            function updateScrollState() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.body.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                if (scrollProgress) scrollProgress.style.width = Math.min(progress, 100) + '%';
+                if (navbar) navbar.classList.toggle('scrolled', scrollTop > 20);
+            }
+
+            function applyLanguage(lang) {
+                const dict = translations[lang];
+                document.querySelectorAll('[data-i18n]').forEach((el) => {
+                    const key = el.getAttribute('data-i18n');
+                    if (dict[key]) el.textContent = dict[key];
+                });
+                if (langEn && langMm) {
+                    langEn.classList.toggle('active', lang === 'en');
+                    langMm.classList.toggle('active', lang === 'mm');
+                }
+                localStorage.setItem('miniboss_lang', lang);
+                currentLang = lang;
+                document.documentElement.lang = lang === 'mm' ? 'my' : 'en';
+            }
+
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    const open = navMenu.classList.toggle('mobile-active');
+                    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+                });
+            }
+
+            navLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (navMenu) {
+                        navMenu.classList.remove('mobile-active');
+                        if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+
+            if (langSwitchBtn) {
+                langSwitchBtn.addEventListener('click', () => {
+                    applyLanguage(currentLang === 'en' ? 'mm' : 'en');
+                });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.12 });
+
+            revealElements.forEach((el) => observer.observe(el));
+
+            const highlightActiveNav = () => {
+                let activeId = 'home';
+                sections.forEach((section) => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 180 && rect.bottom >= 180) activeId = section.id;
+                });
+                navLinks.forEach((link) => {
+                    const href = link.getAttribute('href') || '';
+                    const isActive = href === '#' + activeId || href === 'index.html#' + activeId;
+                    link.classList.toggle('active', isActive);
+                });
+            };
+
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const name = contactForm.querySelector('[name="name"]').value.trim();
+                    const email = contactForm.querySelector('[name="email"]').value.trim();
+                    const message = contactForm.querySelector('[name="message"]').value.trim();
+                    if (!name || !email || !message) {
+                        showToast(translations[currentLang]['toast-error'], true);
+                        return;
+                    }
+                    showToast(translations[currentLang]['toast-success']);
+                    contactForm.reset();
+                });
+            }
+
+            applyLanguage(currentLang);
+            updateScrollState();
+            highlightActiveNav();
+            window.addEventListener('scroll', () => {
+                updateScrollState();
+                highlightActiveNav();
+            }, { passive: true });
+        });
+    </script>
+
+    <script>
+    (function () {
+        const canvas = document.getElementById('globe-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let w, h, cx, cy, radius, dpr;
+        let rotation = 0;
+        let nodes = [];
+        let arcs = [];
+        let animId;
+
+        function resize() {
+            const parent = canvas.parentElement;
+            const size = Math.min(parent.clientWidth, parent.clientHeight, 580);
+            dpr = window.devicePixelRatio || 1;
+            canvas.width = size * dpr;
+            canvas.height = size * dpr;
+            canvas.style.width = size + 'px';
+            canvas.style.height = size + 'px';
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            w = size; h = size;
+            cx = w / 2; cy = h / 2;
+            radius = size * 0.42;
+        }
+
+        // Fibonacci sphere distribution for nodes
+        function createNodes(count) {
+            nodes = [];
+            const golden = Math.PI * (3 - Math.sqrt(5));
+            for (let i = 0; i < count; i++) {
+                const y = 1 - (i / (count - 1)) * 2;
+                const r = Math.sqrt(1 - y * y);
+                const theta = golden * i;
+                const x = Math.cos(theta) * r;
+                const z = Math.sin(theta) * r;
+                nodes.push({
+                    x, y, z,
+                    lat: Math.asin(y),
+                    lon: Math.atan2(z, x),
+                    pulse: Math.random() * Math.PI * 2,
+                    size: 1.2 + Math.random() * 1.8
+                });
+            }
+        }
+
+        function createArcs(count) {
+            arcs = [];
+            for (let i = 0; i < count; i++) {
+                const a = nodes[Math.floor(Math.random() * nodes.length)];
+                let b = nodes[Math.floor(Math.random() * nodes.length)];
+                while (b === a) b = nodes[Math.floor(Math.random() * nodes.length)];
+                arcs.push({
+                    a, b,
+                    progress: Math.random(),
+                    speed: 0.003 + Math.random() * 0.006,
+                    color: ['blue', 'pink', 'red'][Math.floor(Math.random() * 3)]
+                });
+            }
+        }
+
+        function project(x, y, z, rot) {
+            // rotate around Y
+            const cos = Math.cos(rot);
+            const sin = Math.sin(rot);
+            const rx = x * cos - z * sin;
+            const rz = x * sin + z * cos;
+            // simple perspective
+            const scale = radius * 1.15 / (1.8 - rz * 0.5);
+            return {
+                x: cx + rx * scale,
+                y: cy - y * scale,
+                z: rz,
+                visible: rz > -0.15
+            };
+        }
+
+        function drawGlobe() {
+            ctx.clearRect(0, 0, w, h);
+
+            // soft glow behind globe
+            const grad = ctx.createRadialGradient(cx, cy, radius * 0.2, cx, cy, radius * 1.4);
+            grad.addColorStop(0, 'rgba(79, 99, 255, 0.17)');
+            grad.addColorStop(0.48, 'rgba(244, 49, 143, 0.1)');
+            grad.addColorStop(0.72, 'rgba(255, 55, 77, 0.06)');
+            grad.addColorStop(1, 'transparent');
+            ctx.fillStyle = grad;
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius * 1.4, 0, Math.PI * 2);
+            ctx.fill();
+
+            // translucent ocean-like sphere base
+            const sphere = ctx.createRadialGradient(
+                cx - radius * 0.38, cy - radius * 0.42, radius * 0.04,
+                cx, cy, radius * 1.08
+            );
+            sphere.addColorStop(0, 'rgba(255, 93, 143, 0.34)');
+            sphere.addColorStop(0.34, 'rgba(110, 100, 255, 0.27)');
+            sphere.addColorStop(0.7, 'rgba(37, 91, 214, 0.2)');
+            sphere.addColorStop(1, 'rgba(20, 23, 65, 0.12)');
+            ctx.fillStyle = sphere;
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius * 1.06, 0, Math.PI * 2);
+            ctx.fill();
+
+            // outer ring
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius * 1.04, 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(255, 113, 192, 0.68)';
+            ctx.shadowColor = 'rgba(107, 113, 255, 0.8)';
+            ctx.shadowBlur = 16;
+            ctx.lineWidth = 1.8;
+            ctx.stroke();
+            ctx.shadowBlur = 0;
+
+            // latitude / longitude wireframe
+            ctx.lineWidth = 1;
+            // latitudes
+            for (let lat = -60; lat <= 60; lat += 30) {
+                ctx.beginPath();
+                let first = true;
+                for (let lon = 0; lon <= 360; lon += 6) {
+                    const phi = lat * Math.PI / 180;
+                    const theta = lon * Math.PI / 180;
+                    const x = Math.cos(phi) * Math.cos(theta);
+                    const y = Math.sin(phi);
+                    const z = Math.cos(phi) * Math.sin(theta);
+                    const p = project(x, y, z, rotation);
+                    if (p.visible) {
+                        if (first) { ctx.moveTo(p.x, p.y); first = false; }
+                        else ctx.lineTo(p.x, p.y);
+                    } else first = true;
+                }
+                ctx.strokeStyle = 'rgba(255, 121, 181, 0.42)';
+                ctx.stroke();
+            }
+            // longitudes
+            for (let lon = 0; lon < 360; lon += 30) {
+                ctx.beginPath();
+                let first = true;
+                for (let lat = -90; lat <= 90; lat += 4) {
+                    const phi = lat * Math.PI / 180;
+                    const theta = lon * Math.PI / 180;
+                    const x = Math.cos(phi) * Math.cos(theta);
+                    const y = Math.sin(phi);
+                    const z = Math.cos(phi) * Math.sin(theta);
+                    const p = project(x, y, z, rotation);
+                    if (p.visible) {
+                        if (first) { ctx.moveTo(p.x, p.y); first = false; }
+                        else ctx.lineTo(p.x, p.y);
+                    } else first = true;
+                }
+                ctx.strokeStyle = 'rgba(111, 151, 255, 0.4)';
+                ctx.stroke();
+            }
+
+            // continent-ish silhouette (simplified blobs via denser nodes on land would be complex;
+            // we keep wireframe clean)
+
+            // arcs (connection lines)
+            arcs.forEach(arc => {
+                arc.progress += arc.speed;
+                if (arc.progress > 1.2) {
+                    arc.progress = -0.15;
+                    // re-pick endpoints occasionally
+                    if (Math.random() > 0.7) {
+                        arc.a = nodes[Math.floor(Math.random() * nodes.length)];
+                        arc.b = nodes[Math.floor(Math.random() * nodes.length)];
+                    }
+                }
+                if (arc.progress < 0) return;
+
+                const pa = project(arc.a.x, arc.a.y, arc.a.z, rotation);
+                const pb = project(arc.b.x, arc.b.y, arc.b.z, rotation);
+                if (!pa.visible && !pb.visible) return;
+
+                // quadratic curve control point (lifted outward)
+                const midX = (pa.x + pb.x) / 2;
+                const midY = (pa.y + pb.y) / 2;
+                const dx = pb.x - pa.x;
+                const dy = pb.y - pa.y;
+                const dist = Math.hypot(dx, dy) || 1;
+                const lift = Math.min(dist * 0.35, radius * 0.55);
+                const cxp = midX;
+                const cyp = midY - lift;
+
+                const t = Math.min(arc.progress, 1);
+                // draw partial curve
+                ctx.beginPath();
+                ctx.moveTo(pa.x, pa.y);
+                // approximate with many segments
+                const segs = 28;
+                for (let i = 1; i <= segs * t; i++) {
+                    const s = i / segs;
+                    const inv = 1 - s;
+                    const bx = inv * inv * pa.x + 2 * inv * s * cxp + s * s * pb.x;
+                    const by = inv * inv * pa.y + 2 * inv * s * cyp + s * s * pb.y;
+                    ctx.lineTo(bx, by);
+                }
+                const arcAlpha = 0.35 + 0.45 * Math.sin(arc.progress * Math.PI);
+                const arcColors = {
+                    blue: `rgba(70, 139, 255, ${arcAlpha})`,
+                    pink: `rgba(255, 93, 190, ${arcAlpha})`,
+                    red: `rgba(255, 70, 95, ${arcAlpha})`
+                };
+                ctx.strokeStyle = arcColors[arc.color];
+                ctx.lineWidth = 1.4;
+                ctx.stroke();
+
+                // moving dot on arc
+                if (t > 0.05 && t < 0.98) {
+                    const s = t;
+                    const inv = 1 - s;
+                    const bx = inv * inv * pa.x + 2 * inv * s * cxp + s * s * pb.x;
+                    const by = inv * inv * pa.y + 2 * inv * s * cyp + s * s * pb.y;
+                    ctx.beginPath();
+                    ctx.arc(bx, by, 2.2, 0, Math.PI * 2);
+                    ctx.fillStyle = arc.color === 'blue' ? '#70aaff' : arc.color === 'pink' ? '#ff87d1' : '#ff5e78';
+                    ctx.fill();
+                }
+            });
+
+            // nodes (cities / service points)
+            // sort by z for painter order
+            const projected = nodes.map(n => {
+                const p = project(n.x, n.y, n.z, rotation);
+                return { ...p, pulse: n.pulse, size: n.size };
+            }).filter(p => p.visible).sort((a, b) => a.z - b.z);
+
+            projected.forEach(p => {
+                p.pulse += 0.04;
+                const glow = 0.5 + 0.5 * Math.sin(p.pulse);
+                const r = p.size * (0.8 + 0.3 * glow);
+
+                // glow
+                const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r * 4);
+                g.addColorStop(0, `rgba(255, 83, 168, ${0.35 * glow})`);
+                g.addColorStop(1, 'transparent');
+                ctx.fillStyle = g;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, r * 4, 0, Math.PI * 2);
+                ctx.fill();
+
+                // core
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(219, 211, 255, ${0.7 + 0.3 * glow})`;
+                ctx.fill();
+            });
+
+            // equator highlight ring
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+            ctx.strokeStyle = 'rgba(109, 135, 255, 0.32)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+        }
+
+        function tick() {
+            rotation += 0.0045;
+            drawGlobe();
+            animId = requestAnimationFrame(tick);
+        }
+
+        function init() {
+            resize();
+            createNodes(90);
+            createArcs(18);
+            window.addEventListener('resize', () => {
+                resize();
+            });
+            // pause when tab hidden
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    cancelAnimationFrame(animId);
+                } else {
+                    tick();
+                }
+            });
+            tick();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+    </script>
+
+</body>
+</html>
