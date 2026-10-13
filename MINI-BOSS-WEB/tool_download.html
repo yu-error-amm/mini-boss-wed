@@ -8,6 +8,7 @@
     <meta property="og:title" content="Tool Downloads | MINI BOSS">
     <meta property="og:description" content="Download official MINI BOSS utilities and recommended software for mobile repair technicians.">
     <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <title>Tool Downloads | MINI BOSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+        <div class="page-loader-inner">
+            <div class="page-loader-spin"></div>
+            <div class="page-loader-text">MINI BOSS</div>
+        </div>
+    </div>
+
 
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
@@ -184,6 +193,15 @@
         </div>
     </footer>
 
+    <div class="float-contact">
+        <a class="float-contact-btn" href="https://t.me/aungmyintmyat007010" target="_blank" rel="noopener noreferrer" aria-label="Chat on Telegram">
+            <span class="online-dot" aria-hidden="true"></span>
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            <span class="float-contact-label">Chat on Telegram</span>
+        </a>
+    </div>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const translations = {
@@ -284,6 +302,12 @@
             setTimeout(() => {
                 revealElements.forEach(el => el.classList.add('active'));
             }, 80);
+        
+            window.addEventListener('load', () => {
+                const loader = document.getElementById('page-loader');
+                if (loader) setTimeout(() => loader.classList.add('hide'), 200);
+            });
+
         });
     </script>
 </body>
