@@ -8,6 +8,7 @@
     <meta property="og:title" content="VIP Group | MINI BOSS">
     <meta property="og:description" content="Join the MINI BOSS VIP group for mobile repair courses, practical solutions, and direct technician support.">
     <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <title>VIP Group | MINI BOSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -563,6 +564,14 @@
 </head>
 <body>
 
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+        <div class="page-loader-inner">
+            <div class="page-loader-spin"></div>
+            <div class="page-loader-text">MINI BOSS</div>
+        </div>
+    </div>
+
+
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="index.html" class="logo">
@@ -828,7 +837,7 @@
                             <span class="admin-ring admin-ring-spark" aria-hidden="true"></span>
                             <img class="admin-avatar" src="LOGO/myo.jpg" alt="Myo Min Thu" loading="lazy">
                         </div>
-                        <h3 class="admin-name">Myo Min Thu</h3>
+                        <h3 class="admin-name">Myo (MUnlocker95)</h3>
                         <p class="admin-role">Senior Admin &amp; Bypass Expert</p>
                         <div class="admin-socials">
                             <a class="admin-social-link facebook" href="https://www.facebook.com/share/1D4BJWRnai/" target="_blank" rel="noopener noreferrer" aria-label="Myo on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
@@ -925,7 +934,7 @@
                                         <input type="file" id="vip-receipt" name="receipt" accept="image/jpeg,image/png,image/webp,image/jpg">
                                         <div class="vip-upload-ui">
                                             <i class="fa-brands fa-google-drive" style="color:#4285f4;"></i>
-                                            <span data-i18n="pay-upload-hint">Click or drop receipt</span>
+                                            <span data-i18n="pay-upload-hint">Click or drop receipt — saved to Google Drive</span>
                                             <small data-i18n="pay-upload-limit">JPG / PNG / WEBP · Max 5 MB</small>
                                         </div>
                                         <img id="vip-receipt-preview" class="vip-receipt-preview" alt="Receipt preview" hidden>
@@ -985,6 +994,15 @@
             </div>
         </div>
     </footer>
+
+    <div class="float-contact">
+        <a class="float-contact-btn" href="https://t.me/aungmyintmyat007010" target="_blank" rel="noopener noreferrer" aria-label="Chat on Telegram">
+            <span class="online-dot" aria-hidden="true"></span>
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            <span class="float-contact-label">Chat on Telegram</span>
+        </a>
+    </div>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -1058,11 +1076,11 @@
                     "pay-label-phone": "Phone (optional)",
                     "pay-label-note": "Transaction note (optional)",
                     "pay-label-receipt": "Payment Receipt Screenshot *",
-                    "pay-upload-hint": "Click or drop receipt",
+                    "pay-upload-hint": "Click or drop receipt — saved to Google Drive",
                     "pay-upload-limit": "JPG / PNG / WEBP · Max 5 MB",
                     "pay-submit": "Request VIP Access",
                     "pay-form-hint": "Admin will verify payment and grant VIP access within 2 hours.",
-                    "pay-toast-ok": "Admin will grant VIP access within 2 hours.",
+                    "pay-toast-ok": "Receipt saved to Google Drive! Admin will grant VIP access within 2 hours.",
                     "pay-toast-err": "Please fill Telegram username and upload receipt.",
                     "pay-toast-size": "Receipt image must be under 5 MB.",
                     "pay-toast-sending": "Sending request...",
@@ -1534,7 +1552,7 @@
                         })
                         .then(function (result) {
                             if (result.receiptUrl) {
-                                showToast(dict['pay-toast-ok'] || 'Admin will grant VIP access.');
+                                showToast(dict['pay-toast-ok'] || 'Receipt saved to Google Drive! Admin will grant VIP access.');
                                 vipForm.reset();
                                 selectedReceiptFile = null;
                                 if (receiptPreview) {
@@ -1592,6 +1610,12 @@
             } else {
                 revealElements.forEach(activateReveal);
             }
+        
+            window.addEventListener('load', () => {
+                const loader = document.getElementById('page-loader');
+                if (loader) setTimeout(() => loader.classList.add('hide'), 200);
+            });
+
         });
     </script>
 </body>
