@@ -10,6 +10,13 @@
     <meta property="og:title" content="MINI BOSS | Professional Mobile Service">
     <meta property="og:description" content="Professional Android software solutions, FRP service, Fastboot, ADB and remote repair worldwide.">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MINI BOSS">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MINI BOSS | Professional Mobile Service">
+    <meta name="twitter:description" content="Android flashing, FRP, Fastboot, ADB, firmware & remote repair worldwide.">
+    <link rel="canonical" href="https://miniboss.example.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
     <title>MINI BOSS | Professional Mobile Service</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +26,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+    <div class="page-loader" id="page-loader" aria-hidden="true">
+        <div class="page-loader-inner">
+            <div class="page-loader-spin"></div>
+            <div class="page-loader-text">MINI BOSS</div>
+        </div>
+    </div>
 
     <div id="scroll-progress"></div>
 
@@ -313,6 +327,156 @@
         </div>
     </section>
 
+    
+    <!-- TRUST -->
+    <section class="trust-strip" id="trust">
+        <div class="container">
+            <div class="trust-grid reveal">
+                <div class="trust-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <strong data-i18n="trust-1-title">Secure handling</strong>
+                        <span data-i18n="trust-1-desc">Remote sessions with consent only</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <div>
+                        <strong data-i18n="trust-2-title">Fast response</strong>
+                        <span data-i18n="trust-2-desc">24/7 support availability</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>
+                        <strong data-i18n="trust-3-title">Worldwide</strong>
+                        <span data-i18n="trust-3-desc">Remote service from anywhere</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-user-check"></i>
+                    <div>
+                        <strong data-i18n="trust-4-title">Expert admins</strong>
+                        <span data-i18n="trust-4-desc">4+ years field experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="testimonials-title">What Clients Say</h2>
+                <p data-i18n="testimonials-desc">Real feedback from technicians and customers who used our remote and VIP support.</p>
+            </div>
+            <div class="testimonials-grid">
+                <article class="glass-card testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p data-i18n="t1-text">“FRP fixed remotely the same day. Clear steps and professional support.”</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">KS</div>
+                        <div>
+                            <strong data-i18n="t1-name">Kyaw Sithu</strong>
+                            <span data-i18n="t1-role">Shop owner · Yangon</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass-card testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p data-i18n="t2-text">“VIP group lessons helped me handle Xiaomi Mi Account cases much faster.”</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">HM</div>
+                        <div>
+                            <strong data-i18n="t2-name">Htet Myat</strong>
+                            <span data-i18n="t2-role">Technician · Mandalay</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="glass-card testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p data-i18n="t3-text">“Dead boot recovery saved a device I thought was finished. Highly recommend.”</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ZN</div>
+                        <div>
+                            <strong data-i18n="t3-name">Zaw Naing</strong>
+                            <span data-i18n="t3-role">Customer · Remote</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICE GUIDE -->
+    <section id="pricing" class="price-guide-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="pricing-title">Service Guide (From)</h2>
+                <p data-i18n="pricing-desc">Approximate starting prices. Final quote depends on model and security level — contact us to confirm.</p>
+            </div>
+            <div class="price-guide-grid">
+                <div class="glass-card price-guide-card reveal">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3 data-i18n="p1-title">FRP / Account</h3>
+                    <div class="price-from" data-i18n="p1-price">From 15,000 KS</div>
+                    <p data-i18n="p1-desc">Depends on brand & Android version</p>
+                </div>
+                <div class="glass-card price-guide-card reveal">
+                    <i class="fa-solid fa-sd-card"></i>
+                    <h3 data-i18n="p2-title">Firmware Flash</h3>
+                    <div class="price-from" data-i18n="p2-price">From 10,000 KS</div>
+                    <p data-i18n="p2-desc">Stock ROM / region change</p>
+                </div>
+                <div class="glass-card price-guide-card reveal">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3 data-i18n="p3-title">Remote Session</h3>
+                    <div class="price-from" data-i18n="p3-price">Quote based</div>
+                    <p data-i18n="p3-desc">After diagnosis on TeamViewer</p>
+                </div>
+                <div class="glass-card price-guide-card reveal">
+                    <i class="fa-solid fa-crown"></i>
+                    <h3 data-i18n="p4-title">VIP Group</h3>
+                    <div class="price-from" data-i18n="p4-price">50,000 KS</div>
+                    <p data-i18n="p4-desc">Full course + support access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 data-i18n="faq-title">Frequently Asked Questions</h2>
+                <p data-i18n="faq-desc">Quick answers before you contact support.</p>
+            </div>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button type="button" class="faq-q" aria-expanded="false"><span data-i18n="faq-q1">Do you support remote repair worldwide?</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a" data-i18n="faq-a1">Yes. With a Windows PC, stable internet, and TeamViewer/UltraViewer, we can assist from most countries.</div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-q" aria-expanded="false"><span data-i18n="faq-q2">Is my data safe during remote service?</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a" data-i18n="faq-a2">Sessions run only with your permission. Please back up important files before flashing or unlock work.</div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-q" aria-expanded="false"><span data-i18n="faq-q3">How do I join the VIP group?</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a" data-i18n="faq-a3">Open the VIP Group page, pay 50,000 KS via KBZPay, upload the receipt, and admin will grant access after verification.</div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-q" aria-expanded="false"><span data-i18n="faq-q4">Can every FRP or Mi Account be removed?</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a" data-i18n="faq-a4">Most common cases yes, but newest security patches may need special methods or may not be supported yet. We confirm after checking the model.</div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-q" aria-expanded="false"><span data-i18n="faq-q5">How long does a typical job take?</span><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-a" data-i18n="faq-a5">Many remote jobs finish within 30–90 minutes. Complex dead-boot or auth cases can take longer.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact">
         <div class="container contact-layout">
@@ -431,8 +595,10 @@
                     <h4 data-i18n="footer-support-title">Support</h4>
                     <ul>
                         <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
                         <li><a href="tool_download.html">Tool Download</a></li>
-                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
                     </ul>
                 </div>
             </div>
@@ -442,6 +608,15 @@
             </div>
         </div>
     </footer>
+
+    <div class="float-contact">
+        <a class="float-contact-btn" href="https://t.me/aungmyintmyat007010" target="_blank" rel="noopener noreferrer" aria-label="Chat on Telegram">
+            <span class="online-dot" aria-hidden="true"></span>
+            <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+            <span class="float-contact-label" data-i18n="float-tg">Chat on Telegram</span>
+        </a>
+    </div>
+
 
     <div id="toast-container"></div>
 
@@ -519,6 +694,52 @@
                     "footer-text": "Professional mobile repair and software solutions for Android devices, FRP recovery, firmware flashing, and remote support.",
                     "footer-links-title": "Quick Links",
                     "footer-support-title": "Support",
+                                        "trust-1-title": "Secure handling",
+                    "trust-1-desc": "Remote sessions with consent only",
+                    "trust-2-title": "Fast response",
+                    "trust-2-desc": "24/7 support availability",
+                    "trust-3-title": "Worldwide",
+                    "trust-3-desc": "Remote service from anywhere",
+                    "trust-4-title": "Expert admins",
+                    "trust-4-desc": "4+ years field experience",
+                    "testimonials-title": "What Clients Say",
+                    "testimonials-desc": "Real feedback from technicians and customers who used our remote and VIP support.",
+                    "t1-text": "FRP fixed remotely the same day. Clear steps and professional support.",
+                    "t1-name": "Kyaw Sithu",
+                    "t1-role": "Shop owner · Yangon",
+                    "t2-text": "VIP group lessons helped me handle Xiaomi Mi Account cases much faster.",
+                    "t2-name": "Htet Myat",
+                    "t2-role": "Technician · Mandalay",
+                    "t3-text": "Dead boot recovery saved a device I thought was finished. Highly recommend.",
+                    "t3-name": "Zaw Naing",
+                    "t3-role": "Customer · Remote",
+                    "pricing-title": "Service Guide (From)",
+                    "pricing-desc": "Approximate starting prices. Final quote depends on model and security level — contact us to confirm.",
+                    "p1-title": "FRP / Account",
+                    "p1-price": "From 15,000 KS",
+                    "p1-desc": "Depends on brand & Android version",
+                    "p2-title": "Firmware Flash",
+                    "p2-price": "From 10,000 KS",
+                    "p2-desc": "Stock ROM / region change",
+                    "p3-title": "Remote Session",
+                    "p3-price": "Quote based",
+                    "p3-desc": "After diagnosis on TeamViewer",
+                    "p4-title": "VIP Group",
+                    "p4-price": "50,000 KS",
+                    "p4-desc": "Full course + support access",
+                    "faq-title": "Frequently Asked Questions",
+                    "faq-desc": "Quick answers before you contact support.",
+                    "faq-q1": "Do you support remote repair worldwide?",
+                    "faq-a1": "Yes. With a Windows PC, stable internet, and TeamViewer/UltraViewer, we can assist from most countries.",
+                    "faq-q2": "Is my data safe during remote service?",
+                    "faq-a2": "Sessions run only with your permission. Please back up important files before flashing or unlock work.",
+                    "faq-q3": "How do I join the VIP group?",
+                    "faq-a3": "Open the VIP Group page, pay 50,000 KS via KBZPay, upload the receipt, and admin will grant access after verification.",
+                    "faq-q4": "Can every FRP or Mi Account be removed?",
+                    "faq-a4": "Most common cases yes, but newest security patches may need special methods or may not be supported yet. We confirm after checking the model.",
+                    "faq-q5": "How long does a typical job take?",
+                    "faq-a5": "Many remote jobs finish within 30–90 minutes. Complex dead-boot or auth cases can take longer.",
+                    "float-tg": "Chat on Telegram",
                     "toast-success": "Message sent successfully!",
                     "toast-error": "Please fill in all fields."
                 },
@@ -594,6 +815,53 @@
                     "footer-links-title": "အမြန်လင့်များ",
                     "footer-support-title": "ပံ့ပိုးကူညီမှု",
                     "toast-success": "စာတိုပို့ပြီးပါပြီ!",
+                    
+                    "trust-1-title": "လုံခြုံစွာ ကိုင်တွယ်မှု",
+                    "trust-1-desc": "ခွင့်ပြုချက်ဖြင့်သာ Remote လုပ်ဆောင်",
+                    "trust-2-title": "မြန်ဆန်သော တုံ့ပြန်မှု",
+                    "trust-2-desc": "၂၄ နာရီ ပံ့ပိုးမှု",
+                    "trust-3-title": "ကမ္ဘာအနှံ့",
+                    "trust-3-desc": "နေရာမရွေး Remote Service",
+                    "trust-4-title": "ကျွမ်းကျင် Admin",
+                    "trust-4-desc": "၄ နှစ်ကျော် အတွေ့အကြုံ",
+                    "testimonials-title": "ဖောက်သည်များ ပြောကြားချက်",
+                    "testimonials-desc": "Remote နှင့် VIP support အသုံးပြုသူများ၏ အမှန်တကယ် မှတ်ချက်များ။",
+                    "t1-text": "FRP ကို remote ဖြင့် တစ်ရက်တည်း ပြင်ပေးနိုင်ခဲ့သည်။ ရှင်းလင်းပြီး ပရော်ဖက်ရှင်နယ်။",
+                    "t1-name": "ကျော်စည်သူ",
+                    "t1-role": "ဆိုင်ပိုင်ရှင် · ရန်ကုန်",
+                    "t2-text": "VIP group သင်ခန်းစာကြောင့် Xiaomi Mi Account အမှုများကို ပိုမြန်ဆန်စွာ ကိုင်တွယ်နိုင်လာသည်။",
+                    "t2-name": "ထက်မြတ်",
+                    "t2-role": "နည်းပညာရှင် · မန္တလေး",
+                    "t3-text": "Dead boot ဖြစ်နေသော ဖုန်းကို ပြန်လည်အသက်သွင်းပေးနိုင်ခဲ့သည်။ အကြံပြုပါတယ်။",
+                    "t3-name": "ဇော်နိုင်",
+                    "t3-role": "ဖောက်သည် · Remote",
+                    "pricing-title": "ဝန်ဆောင်မှု စျေးနှုန်း (မှစ၍)",
+                    "pricing-desc": "ခန့်မှန်း စျေးနှုန်းများ။ မော်ဒယ်နှင့် security အပေါ် မူတည်ပြီး အတိအကျ ချိန်ညှိပါမည်။",
+                    "p1-title": "FRP / Account",
+                    "p1-price": "၁၅,၀၀၀ KS မှ",
+                    "p1-desc": "Brand နှင့် Android version ပေါ်မူတည်",
+                    "p2-title": "Firmware Flash",
+                    "p2-price": "၁၀,၀၀၀ KS မှ",
+                    "p2-desc": "Stock ROM / Region ပြောင်း",
+                    "p3-title": "Remote Session",
+                    "p3-price": "စစ်ဆေးပြီးမှ ဈေး",
+                    "p3-desc": "TeamViewer ဖြင့် ရှာဖွေပြီးမှ",
+                    "p4-title": "VIP Group",
+                    "p4-price": "၅၀,၀၀၀ KS",
+                    "p4-desc": "သင်ခန်းစာ + support အပြည့်",
+                    "faq-title": "မေးလေ့ရှိသော မေးခွန်းများ",
+                    "faq-desc": "ဆက်သွယ်မီ သိထားသင့်သော အဖြေများ။",
+                    "faq-q1": "ကမ္ဘာအနှံ့ Remote ပြင်ပေးနိုင်ပါသလား?",
+                    "faq-a1": "ပေးနိုင်ပါသည်။ Windows PC၊ တည်ငြိမ်သော အင်တာနက်နှင့် TeamViewer/UltraViewer လိုအပ်ပါသည်။",
+                    "faq-q2": "Remote လုပ်စဉ် ဒေတာ လုံခြုံပါသလား?",
+                    "faq-a2": "သင့်ခွင့်ပြုချက်ဖြင့်သာ လုပ်ဆောင်ပါသည်။ Flashing မလုပ်မီ backup လုပ်ထားပါ။",
+                    "faq-q3": "VIP Group ဘယ်လို ဝင်ရမလဲ?",
+                    "faq-a3": "VIP Group စာမျက်နှာတွင် KBZPay ဖြင့် ၅၀,၀၀၀ KS ပေးချေ၊ ပြေစာတင်ပါ။ Admin စစ်ပြီး access ပေးပါမည်။",
+                    "faq-q4": "FRP / Mi Account အားလုံး ဖြုတ်နိုင်ပါသလား?",
+                    "faq-a4": "အများစု ဖြုတ်နိုင်သော်လည်း နောက်ဆုံး security များတွင် နည်းလမ်းမရှိသေးနိုင်ပါ။ မော်ဒယ်စစ်ပြီး အကြောင်းကြားပါမည်။",
+                    "faq-q5": "အလုပ်တစ်ခု ဘယ်လောက်ကြာသလဲ?",
+                    "faq-a5": "Remote အမှုအများစု ၃၀–၉၀ မိနစ်။ Dead boot / Auth အမှုများ ပိုကြာနိုင်သည်။",
+                    "float-tg": "Telegram မှ ဆက်သွယ်ရန်",
                     "toast-error": "အချက်အလက်အားလုံး ဖြည့်ပေးပါ။"
                 }
             };
@@ -704,6 +972,32 @@
                     contactForm.reset();
                 });
             }
+
+            
+            // FAQ accordion
+            document.querySelectorAll('.faq-q').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const item = btn.closest('.faq-item');
+                    const open = item.classList.contains('open');
+                    document.querySelectorAll('.faq-item.open').forEach((el) => {
+                        el.classList.remove('open');
+                        const b = el.querySelector('.faq-q');
+                        if (b) b.setAttribute('aria-expanded', 'false');
+                    });
+                    if (!open) {
+                        item.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // Page loader
+            window.addEventListener('load', () => {
+                const loader = document.getElementById('page-loader');
+                if (loader) {
+                    setTimeout(() => loader.classList.add('hide'), 200);
+                }
+            });
 
             applyLanguage(currentLang);
             updateScrollState();
