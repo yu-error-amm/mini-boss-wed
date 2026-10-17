@@ -9,6 +9,7 @@
     <meta property="og:description" content="Download official MINI BOSS utilities and recommended software for mobile repair technicians.">
     <meta property="og:type" content="website">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
     <title>Tool Downloads | MINI BOSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -148,6 +149,27 @@
                         </a>
                     </div>
                 </div>
+
+                <!-- Tool 5 -->
+                <div class="glass-card tool-card reveal">
+                    <div class="tool-header">
+                        <i class="fa-solid fa-terminal"></i>
+                        <div>
+                            <h3>AMM Cust One Click Edit Tool  </h3>
+                            <span class="tool-version">Bundle</span>
+                        </div>
+                    </div>
+                    <p data-i18n="t5-desc">A simple tool for editing cust with a one-click interface.Zip Passwork=22</p>
+                    <div class="tool-reqs">
+                        <p><i class="fa-brands fa-windows"></i> Windows 10/11</p>
+                        <p><i class="fa-solid fa-file-zipper"></i> Lightweight</p>
+                    </div>
+                    <div class="tool-actions">
+                        <a href="https://drive.google.com/file/d/1jXN_q5QwCoCx3zHz12So9HGcDmQ5rUTW/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-download"></i> <span data-i18n="dl-btn">Download</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -193,6 +215,11 @@
         </div>
     </footer>
 
+    
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
     <div class="float-contact">
         <a class="float-contact-btn" href="https://t.me/aungmyintmyat007010" target="_blank" rel="noopener noreferrer" aria-label="Chat on Telegram">
             <span class="online-dot" aria-hidden="true"></span>
@@ -222,6 +249,7 @@
                     "t2-desc": "Utility for flashing firmware using fastboot mode. Simple and efficient for technicians.",
                     "t3-desc": "Complete AIO driver pack including MTK, Qualcomm, SPD, and Samsung drivers.",
                     "t4-desc": "Full Android recovery bundle for flashing, bootloader control, and device troubleshooting.",
+                    "t5-desc": "A simple tool for editing cust with a one-click interface.Zip Passwork=22",
                     "dl-btn": "Download"
                 },
                 mm: {
@@ -241,6 +269,7 @@
                     "t2-desc": "Fastboot mode ဖြင့် Firmware ရေးရန် Utility။ နည်းပညာရှင်များအတွက် ရိုးရှင်းပြီး ထိရောက်ပါသည်။",
                     "t3-desc": "MTK, Qualcomm, SPD နှင့် Samsung Driver များ အစုံအလင်ပါဝင်သော Pack။",
                     "t4-desc": "Flashing, Bootloader ထိန်းချုပ်ခြင်းနှင့် ဖုန်းပြဿနာဖြေရှင်းရန် Android recovery bundle အပြည့်အစုံ။",
+                    "t5-desc": "A simple tool for editing cust with a one-click interface.Zip Passwork=22",
                     "dl-btn": "ဒေါင်းလုဒ်"
                 }
             };
@@ -303,6 +332,13 @@
                 revealElements.forEach(el => el.classList.add('active'));
             }, 80);
         
+            
+            const btt = document.getElementById('back-to-top');
+            if (btt) {
+                window.addEventListener('scroll', () => btt.classList.toggle('show', window.scrollY > 500), { passive: true });
+                btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+            }
+
             window.addEventListener('load', () => {
                 const loader = document.getElementById('page-loader');
                 if (loader) setTimeout(() => loader.classList.add('hide'), 200);
